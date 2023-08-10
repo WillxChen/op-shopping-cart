@@ -1,13 +1,14 @@
-import './App.css'
+import "./App.css";
+import Home from "./Home";
+import MapSvg from "./MapSvg";
 
 function App() {
   return (
     <>
-      <div>
-        Hello World
-      </div>
+      <Home />
+      {/* <MapSvg /> */}
     </>
-  )
+  );
 }
 
-export default App
+export default App;
