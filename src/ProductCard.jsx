@@ -10,7 +10,7 @@ export default function ProductCard({ product }) {
         <p className="text-slate-600 mt-2 mb-1">
           {[...tasting_notes].slice(0, 2).join(" & ")}
         </p>
-        <p className="text-sm mb-5">{`$${price}`}</p>
+        <p className="text-sm mb-5">{`$${price.toFixed(2)}`}</p>
         <label htmlFor="qty">Qty</label>
         <input placeholder="Quantity" type="number" id="qty" />
         <button>Add to Cart</button>

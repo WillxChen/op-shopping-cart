@@ -4,17 +4,19 @@ export default function Home() {
   return (
     <>
       <Header />
-      <div className="relative flex items-center justify-center h-screen overflow-hidden">
+      <div className="flex items-center justify-center h-1/4 overflow-hidden">
         <video
           src="../farmer.mp4"
           autoPlay
           muted
           loop
-          className="absolute w-auto min-w-full min-h-full max-w-none"
+          className="w-auto min-w-full min-h-full max-w-none"
         ></video>
       </div>
-      <div>Description</div>
-      <a>Browse our offerings</a>
+      <div className="absolute top-2/4 left-2/4 -translate-x-1/2 bg-slate-500">
+        <p className="text-center">Welcome!</p>
+        <a>Browse our offerings</a>
+      </div>
     </>
   );
 }
