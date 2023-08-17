@@ -1,18 +1,21 @@
-import { useEffect, useState } from "react";
-import Header from "./Header";
+import { useEffect, useState, useContext } from "react";
 import Filter from "./Filter";
 import ProductCard from "./ProductCard";
-import useFetchProducts from "./useFetchProducts";
+import { ShopContext } from "./routes/Root";
 
 export default function Products() {
+  // Context
+  const { productsData } = useContext(ShopContext);
+  // States
   const [filter, setFilter] = useState(null);
   const [products, setProducts] = useState(null);
-  const url = "https://my.api.mockaroo.com/coffee.json?key=df90ae90";
-  const { data, loading, error } = useFetchProducts(url);
+  const { data, loading, error } = productsData;
 
   useEffect(() => {
-    if (filter === null) setProducts(data);
+    if (!filter) setProducts(data);
+    if (typeof data !== "object") setProducts([]);
     else {
+      console.log(products);
       const [key, value] = Object.entries(filter)[0];
       const filteredProducts = data.filter((product) => {
         return product[key].includes(value);
@@ -23,7 +26,6 @@ export default function Products() {
 
   return (
     <>
-      <Header />
       {/* Content Wrapper */}
       <div className="px-10 pb-20">
         <h1 className="text-8xl font-bold pt-7">Our Coffees</h1>
