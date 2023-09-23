@@ -8,12 +8,11 @@ export default function Products() {
   const { productsData } = useContext(ShopContext);
   // States
   const [filter, setFilter] = useState(null);
-  const [products, setProducts] = useState(null);
+  const [products, setProducts] = useState([]);
   const { data, loading, error } = productsData;
 
   useEffect(() => {
     if (!filter) setProducts(data);
-    if (typeof data !== "object") setProducts([]);
     else {
       console.log(products);
       const [key, value] = Object.entries(filter)[0];
@@ -27,7 +26,7 @@ export default function Products() {
   return (
     <>
       {/* Content Wrapper */}
-      <div className="px-10 pb-20">
+      <div className="p-40">
         <h1 className="text-8xl font-bold pt-7">Our Coffees</h1>
         <p className="my-5">
           Welcome to our selections, your gateway to a diverse collection of
