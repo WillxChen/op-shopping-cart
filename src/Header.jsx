@@ -26,7 +26,7 @@ export default function Header() {
               isActive ? "text-slate-50 font-medium" : "text-slate-400"
             }
           >
-            About Us
+            About
           </NavLink>
           <NavLink
             to="/#map"

@@ -1,9 +1,15 @@
 import "./App.css";
+import { useState } from "react";
 import MapSvg from "./MapSvg";
+import MapTooltip from "./MapTooltip";
 
 export default function App() {
+  const [country, setCountry] = useState("");
+  const [activeCountry, setActiveCountry] = useState(false);
+
   return (
     <>
+      {/*Landing*/}
       <section
         className="relative flex items-center justify-center overflow-hidden"
         id="#"
@@ -19,6 +25,8 @@ export default function App() {
       <div className="absolute top-1/3 left-2/4 -translate-x-1/2 bg-slate-500 p-5 bg-opacity-50">
         <p className="text-6xl text-slate-200">Gravitasse Coffee</p>
       </div>
+
+      {/*About Us*/}
       <section
         className="min-h-screen bg-slate-900 text-slate-200 p-40"
         id="about"
@@ -59,13 +67,26 @@ export default function App() {
           </div>
         </div>
       </section>
+
+      {/*Map*/}
       <section
         className="min-h-screen bg-slate-900 text-slate-200 pt-40 px-40"
         id="map"
       >
         <h2 className="text-7xl mb-16">Coffee Map</h2>
-        <div className="flex justify-center items-center">
-          <MapSvg className=""></MapSvg>
+        <div className="grid place-items-center">
+          <div className="relative">
+            <MapSvg
+              country={country}
+              setCountry={setCountry}
+              activeCountry={activeCountry}
+              setActiveCountry={setActiveCountry}
+            ></MapSvg>
+            <MapTooltip
+              country={country}
+              activeCountry={activeCountry}
+            ></MapTooltip>
+          </div>
         </div>
       </section>
     </>
