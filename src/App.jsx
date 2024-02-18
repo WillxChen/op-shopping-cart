@@ -1,12 +1,7 @@
 import "./App.css";
-import { useState } from "react";
-import MapSvg from "./MapSvg";
-import MapTooltip from "./MapTooltip";
+import Map from "./Map";
 
 export default function App() {
-  const [country, setCountry] = useState("");
-  const [activeCountry, setActiveCountry] = useState(false);
-
   return (
     <>
       {/*Landing*/}
@@ -75,17 +70,8 @@ export default function App() {
       >
         <h2 className="text-7xl mb-16">Coffee Map</h2>
         <div className="grid place-items-center">
-          <div className="relative">
-            <MapSvg
-              country={country}
-              setCountry={setCountry}
-              activeCountry={activeCountry}
-              setActiveCountry={setActiveCountry}
-            ></MapSvg>
-            <MapTooltip
-              country={country}
-              activeCountry={activeCountry}
-            ></MapTooltip>
+          <div className="relative border border-slate-700">
+            <Map />
           </div>
         </div>
       </section>

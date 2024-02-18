@@ -9,6 +9,7 @@
       "countries": [
         {
           "name": "Guatemala",
+          "countryCode": "gt",
           "description": "Guatemalan coffees are often full-bodied, rich, and with a complex taste profile.",
           "typicalFlavors": ["Chocolate", "Nuts", "Spices"],
           "altitude": "1300-1700 meters",
@@ -16,6 +17,7 @@
         },
         {
           "name": "Honduras",
+          "countryCode": "hn",
           "description": "Honduran coffees are known for their mild flavor profile and bright acidity.",
           "typicalFlavors": ["Fruit", "Caramel", "Nutty"],
           "altitude": "1000-2000 meters",
@@ -23,6 +25,7 @@
         },
         {
           "name": "El Salvador",
+          "countryCode": "sv",
           "description": "El Salvadorian coffees tend to have a medium body with sharp acidity.",
           "typicalFlavors": ["Citrus", "Sugar cane", "Nuts"],
           "altitude": "1200-1500 meters",
@@ -30,6 +33,7 @@
         },
         {
           "name": "Nicaragua",
+          "countryCode": "ni",
           "description": "Nicaraguan coffees are typically medium-bodied with a balanced sweetness and acidity.",
           "typicalFlavors": ["Chocolate", "Fruit"],
           "altitude": "1000-1500 meters",
@@ -37,6 +41,7 @@
         },
         {
           "name": "Costa Rica",
+          "countryCode": "cr",
           "description": "Costa Rican coffees are generally medium-bodied with bright acidity and prominent fruity flavors.",
           "typicalFlavors": ["Citrus", "Fruit", "Sugar cane"],
           "altitude": "1200-1700 meters",
@@ -44,6 +49,7 @@
         },
         {
           "name": "Panama",
+          "countryCode": "pa",
           "description": "Panama, especially the region of Boquete, is renowned for producing some of the most unique and high-quality coffees in the world. The country's coffee often exhibits bright acidity, medium body and complex flavors.",
           "typicalFlavors": ["Tropical Fruit", "Berries", "Cocoa"],
           "altitude": "1000-1800 meters",
@@ -60,6 +66,7 @@
       "countries": [
         {
           "name": "Brazil",
+          "countryCode": "br",
           "description": "Brazilian coffees are known for their nutty and chocolatey flavors with a heavy body. They often have lower acidity and can exhibit sweet caramel notes. Brazil is the world's largest coffee producer.",
           "typicalFlavors": ["Chocolate", "Nuts", "Caramel"],
           "altitude": "800-1300 meters",
@@ -67,6 +74,7 @@
         },
         {
           "name": "Colombia",
+          "countryCode": "co",
           "description": "Colombian coffees are often medium-bodied with a balanced acidity and dominant flavors of citrus, fruit, and berries. The country's diverse microclimates contribute to these unique flavor profiles.",
           "typicalFlavors": ["Citrus", "Fruit", "Berries"],
           "altitude": "1200-2000 meters",
@@ -74,6 +82,7 @@
         },
         {
           "name": "Peru",
+          "countryCode": "pe",
           "description": "Peruvian coffees tend to have a medium to light body with bright acidity. They often exhibit floral and fruity notes along with some sweet caramel undertones.",
           "typicalFlavors": ["Fruit", "Floral", "Caramel"],
           "altitude": "1100-2200 meters",
@@ -90,6 +99,7 @@
       "countries": [
         {
           "name": "Rwanda",
+          "countryCode": "rw",
           "description": "Rwandan coffee is often characterized by a bright acidity and complex flavors of fruit and floral notes. The high altitude of Rwanda's coffee-growing regions contributes to these unique qualities.",
           "typicalFlavors": ["Fruit", "Floral", "Tea-like"],
           "altitude": "1500-2000 meters",
@@ -97,6 +107,7 @@
         },
         {
           "name": "Uganda",
+          "countryCode": "ug",
           "description": "Ugandan coffees often have a full body with low acidity. They exhibit flavors of chocolate and nuts along with some fruity undertones.",
           "typicalFlavors": ["Chocolate", "Nuts", "Fruit"],
           "altitude": "1200-1800 meters",
@@ -104,6 +115,7 @@
         },
         {
           "name": "Kenya",
+          "countryCode": "ke",
           "description": "Kenyan coffees are known for their vibrant acidity and rich flavors. They often have a wine-like quality to them and can exhibit notes of berries and citrus.",
           "typicalFlavors": ["Berries", "Citrus", "Wine-like"],
           "altitude": "1500-2100 meters",
@@ -111,6 +123,7 @@
         },
         {
           "name": "Ethiopia",
+          "countryCode": "et",
           "description": "Ethiopian coffees are incredibly diverse in flavor due to the country's wide range of microclimates. They can range from winey to fruity or even tea-like with floral notes. Ethiopia is considered the birthplace of coffee.",
           "typicalFlavors": ["Fruit", "Wine-like", "Tea-like", "Floral"],
           "altitude": "1500-2200 meters",
@@ -118,6 +131,7 @@
         },
         {
           "name": "Yemen",
+          "countryCode": "ye",
           "description": "Yemeni coffees are known for their distinctive, winey richness and intense dried fruit flavors. The traditional 'natural' process used in Yemen contributes to these unique qualities.",
           "typicalFlavors": ["Dried Fruit", "Spice", "Wine-like"],
           "altitude": "800-1900 meters",
@@ -134,6 +148,7 @@
       "countries": [
         {
           "name": "India",
+          "countryCode": "in",
           "description": "Indian coffees often have a full body with medium acidity. They can exhibit spicy and nutty flavors, and some Indian coffees like Monsooned Malabar have unique processing methods that contribute to their distinct taste.",
           "typicalFlavors": ["Spices", "Nuts"],
           "altitude": "600-1600 meters",
@@ -141,6 +156,7 @@
         },
         {
           "name": "Sumatra",
+          "countryCode": "id-sumatra",
           "description": "Sumatran coffees are known for their full-bodied, earthy flavor with low acidity. They often exhibit notes of dark chocolate and spices. The wet-hulled process commonly used in Sumatra contributes to these unique qualities.",
           "typicalFlavors": ["Earthy", "Dark Chocolate", "Spices"],
           "altitude": "800-1500 meters",
@@ -148,6 +164,7 @@
         },
         {
           "name": "Java",
+          "countryCode": "id-java",
           "description": "Java coffees are typically heavy bodied with a lasting finish. They can range from sweet and fruity to dark and spicy depending on the specific region within Java.",
           "typicalFlavors": ["Fruit", "Dark Chocolate", "Spices"],
           "altitude": "800-1600 meters",
@@ -155,6 +172,7 @@
         },
         {
           "name": "Papua New Guinea",
+          "countryCode": "pg",
           "description": "Coffees from Papua New Guinea often have a medium body with bright acidity. They can exhibit fruity flavors along with some earthy undertones.",
           "typicalFlavors": ["Fruit", "Earthy"],
           "altitude": "1500-2100 meters",

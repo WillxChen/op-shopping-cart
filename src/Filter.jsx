@@ -56,7 +56,6 @@ const options = [
 export default function Filter({ setFilter }) {
   return (
     <div className="max-w-xs w-full">
-      <h2 className="font-bold">Filter</h2>
       <Accordion setFilter={setFilter} />
     </div>
   );
@@ -114,7 +113,7 @@ function AccordionItem({
 function FilterList({ options, setFilter }) {
   const keyName = Object.keys(options)[1];
   return (
-    <div>
+    <div className="px-5">
       {options[keyName].map((option, index) => (
         <FilterOption
           key={index}
@@ -128,5 +127,12 @@ function FilterList({ options, setFilter }) {
 
 function FilterOption({ option, setFilter }) {
   const value = Object.values(option)[0];
-  return <div onClick={() => setFilter(option)}>{value}</div>;
+  return (
+    <div
+      className="text-right p-3 rounded border-solid border-2 border-transparent hover:border-slate-200"
+      onClick={() => setFilter(option)}
+    >
+      {value}
+    </div>
+  );
 }

@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 export default function ProductCard({ product }) {
   const { image, coffee_name, price, tasting_notes } = product;
   return (
-    <Link to={`/product/${product.id}`}>
+    <Link to={`/products/${product.id}`}>
       <div className="max-w-sm rounded overflow-hidden shadow-lg">
         <img src={image} alt="" />
         <div className="grid px-3">
-          <p className="font-bold text-2xl mt-3 h-16 leading-7 border-b">
+          <p className="font-bold text-2xl mt-3 max-h-16 leading-7 border-b text-truncate">
             {coffee_name}
           </p>
           <p className="text-slate-600 mt-2 mb-1">

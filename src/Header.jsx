@@ -8,7 +8,7 @@ export default function Header() {
   const isRootPath = location.pathname === "/";
 
   return (
-    <div className="fixed top-0 z-50 shadow">
+    <div className="fixed top-0 z-50 shadow w-screen overflow-y-scroll">
       <header className="fixed min-w-full top-0 z-10 px-5 py-3 flex justify-between items-center bg-opacity-75 bg-slate-700 transition-opacity">
         <NavLink
           className="text-6xl text-slate-200"
